@@ -6,10 +6,10 @@ async function loadImages() {
 
   function showRandomImage() {
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    iamge.src = `/images/${randomImage}`;
+    image.src = `/images/${randomImage}`;
   }
 
-  zeigeZufallsbild();
+  showRandomImage();
   setInterval(showRandomImage, 10000);
 }
 
